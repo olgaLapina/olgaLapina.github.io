@@ -1,11 +1,13 @@
 body {
+  min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
   background-image: url("./images/bg.jpeg");
-  background-size: contain;
+  background-size: 80vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 110%;
   background-color: black;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -18,13 +20,14 @@ body {
 }
 
 .top {
-  margin-top: 50vh;
+  height: 100vh;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -71,7 +74,7 @@ body {
   width: 200px;
 
   bottom: 0;
-  transform: translateX(100vw);
+  transform: translateX(calc(100vw + 200px));
 }
 
 .toasty-move {
